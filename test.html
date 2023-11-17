@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            scroll-snap-type: y mandatory;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            transition: background-color 0.1s ease;
+            scroll-snap-align: start;
+        }
+
+        #section1 {
+            background-color: #3498db;
+        }
+
+        #section2 {
+            background-color: #e74c3c;
+        }
+
+        #section3 {
+            background-color: #2ecc71;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <section id="section1">
+        <a href="#section2">Section 2</a>
+    </section>
+    <section id="section2">
+        <a href="#section3">Section 3</a>
+    </section>
+    <section id="section3">
+        <a href="#section1">Section 1</a>
+    </section>
+</body>
+</html>
